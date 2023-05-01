@@ -1,0 +1,28 @@
+h1 {
+    font-size: 2em;
+}
+
+main > .flex-container > h2 {
+	font-size: 1.5em;
+}
+
+.small {
+    width: 40%;
+}
+
+main p {
+    width: 45ch;
+}
+
+table td {
+	padding: 0.25rem;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+.input-wrapper > *{
+    width: max-content;
+}
+

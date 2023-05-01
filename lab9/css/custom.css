@@ -1,0 +1,237 @@
+:root {
+	--fontColor: #a6bfaf;
+	--linkColor: rgb(55, 181, 55);
+	--backgroundColor: rgba(60, 98, 85, .75);
+	--mainFont: 'Roboto', sans-serif; 
+	--secondaryFont: 'Gloock', serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: auto;
+	background-image: url("../../images/lab4background.jpg");
+	color: var(--fontColor);
+	font-family: var(--mainFont);
+}
+
+h1, h2 {
+	font-family: var(--secondaryFont);
+}
+
+legend {
+	font-family: var(--secondaryFont);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+figure {
+	border: thin solid #a6bfaf;
+	border-radius: 3%;
+	padding: 1.5%;
+	text-align: center;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+header, nav, main, footer {
+	background-color: var(--backgroundColor);
+	padding: 1em 1em;
+}
+
+main {
+	padding: 0 6em 0 6em;
+}
+
+nav {
+	border: thick solid var(--linkColor);
+}
+
+main > section {
+	padding-top: 2em;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+main p {
+	width: 70ch;
+	text-indent: 2em;
+}
+
+img {
+	border-radius: 3%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration:  none;
+	color: var(--linkColor);
+	font-size: 1.5em;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: var(--fontColor)
+}
+
+fieldset {
+	border: none;
+	margin: 1rem 1rem;
+}
+
+cite {
+	font-size: small;
+}
+
+.small {
+	width: 20%;
+}
+
+.flex-container {
+	display: flex;
+}
+
+nav > .flex-container {
+	justify-content: center;
+	gap: 4em;
+	padding: 1em 1em;
+}
+
+header > .flex-container {
+	justify-content: center;
+}
+
+main > .flex-container {
+	flex-direction: column;
+}
+
+main > .flex-container:not(:first-child) {
+	margin-top: 1em;
+}
+
+main > .flex-container > h2 {
+	font-size: 2em;
+	margin-bottom: 1rem;
+}
+
+main > .flex-container > a {
+	width: max-content;
+}
+
+main > .flex-container figure,table {
+	margin-top: 2rem;
+}
+
+main > .flex-container > table {
+	border: thin solid var(--linkColor);
+	padding: 1rem;
+}
+
+table th {
+	font-size: 1.5rem;
+}
+
+table tr:not(:last-child) {
+	width: max-content;
+	margin: auto;
+	text-align: center;
+}
+
+table tr:nth-child(even) {
+	background-color: rgba(60, 98, 85, .55);
+}
+
+table tr:hover {
+	color: var(--linkColor);
+}
+
+table td {
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+footer > .flex-container {
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer p {
+	text-align: center;
+}
+
+input[type="submit"] {
+	background-color: var(--backgroundColor);
+	border: none;
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 3%;
+	color: var(--fontColor);
+	transition: 1s;
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(60, 175, 85, 1);	
+}
+
+fieldset:last-child {
+	margin-top: 2em;
+}
+
+fieldset p {
+	text-indent: 0;
+}
+
+.flex-container > .input-wrapper {
+	align-self: center;
+	height: max-content;
+}
+
+.golden {
+	color: rgb(217, 210, 14);
+}
+
+.amber {
+	color: rgb(175, 120, 11);
+}
+
+.dark {
+	color: rgb(104, 72, 7);
+}
+
+.very-dark {
+	color: rgb(53, 36, 3);
+}
+
+.center {
+    text-align: center;
+}
+
+.input-wrapper {
+	font-size: 1.5em;
+	margin-left: 1em;
+}
+
+.input-wrapper > p > input[type="text"],input[type="email"] {
+	margin-left: 4em;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.activePage {
+	font-style: italic;
+	font-weight: bold;
+}

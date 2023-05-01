@@ -1,0 +1,43 @@
+main {
+    padding: 0 3em 0 3em;
+}
+
+main > section {
+    padding-top: 1em; 
+}
+
+main > .flex-container figure {
+    margin-top: 1rem;
+}
+
+main p {
+    width: 30ch;
+}
+
+nav > .flex-container {
+    padding: 0.25rem;
+}
+
+nav > .flex-container > a{
+    align-self: center;
+}
+
+.small {
+    width: 60%;
+} 
+
+table,th {
+    font-size: 0.5rem;
+}
+
+table th {
+    font-size: 0.75rem;
+}
+
+.input-wrapper {
+    font-size: 1em;
+}
+
+cite > a {
+    font-size: 1em;
+}
